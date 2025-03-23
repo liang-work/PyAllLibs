@@ -18,9 +18,11 @@ MIT wmi, syst(SystemInfo), toml, colorlog
 BSD cachelib, psutil
 """
 
-from . import dns,log,SaveFile,LoadFile,syst,nw_socket
+from . import dns,log
+from . import SaveFile,LoadFile,syst,nw_socket,SC,hash
 
 dns_record = dns.query_dns_record
 whois = dns.whois_query
 loger = log.loging
 
+__version__ = "0.1.0"
